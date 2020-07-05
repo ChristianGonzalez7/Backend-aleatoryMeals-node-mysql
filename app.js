@@ -11,5 +11,5 @@ app.use(express.json());
 app.use('/home', homeRouter);
 app.use('/meal', mealRouter);
 
-const PORT = process.env.port || 9001;
-app.listen(PORT, ()=> console.log(`Server running on port ${PORT}`));
+const PORT = process.env.port || 9002;
+app.listen(PORT,'0.0.0.0', ()=> console.log(`Server running on port ${PORT}`));
