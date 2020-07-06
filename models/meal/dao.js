@@ -13,8 +13,6 @@ class MealDAO{
                     console.log(err);
                     console.log(rows);
                     resolve(rows);
-
-                    connection.end();
             });
         })
     }
